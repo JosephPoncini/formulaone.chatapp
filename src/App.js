@@ -71,7 +71,7 @@ const sendMessage = async(message) => {
         <Container>
           <Row className='px-5 my-5'> 
             <Col sm='12'>
-            <h1 className=' font-weight-light'> Welcome to the F1 ChatApp</h1>
+            <h1 className=' font-weight-light'> Welcome to Joe{"'"}s ChatApp</h1>
               </Col>
           </Row>
           {! conn 
