@@ -4,7 +4,8 @@ const MessageContainer = ({ messages }) => {
             messages.map((msg, index) => 
             <table>
                 <tr key={index}>
-                    <td>{msg.msg} - {msg.username}</td>
+                    <span>{msg.msg} -</span>
+                    <span className="fw-bold">{msg.username}</span>
                 </tr>
             </table>)
         }
