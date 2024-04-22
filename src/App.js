@@ -16,15 +16,22 @@ const [messages, setMessages] = useState([]);
 const joinChatRoom = async (username, chatroom) => {
   try {
     // initiate a connection
+
     // const conn = new HubConnectionBuilder()
     //               .withUrl("http://localhost:5265/chat")
     //               .configureLogging(LogLevel.Information)
     //               .build();
 
+    // const conn = new HubConnectionBuilder()
+    //               .withUrl("http://poncinijsignalr.azurewebsites.net/chat")
+    //               .configureLogging(LogLevel.Information)
+    //               .build();
+
     const conn = new HubConnectionBuilder()
-                  .withUrl("http://poncinijsignalr.azurewebsites.net/chat")
+                  .withUrl("https://poncinijchatappserver.azurewebsites.net/chat")
                   .configureLogging(LogLevel.Information)
                   .build();
+
 
 
     // set up handler
